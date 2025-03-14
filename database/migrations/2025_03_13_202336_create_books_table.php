@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('material_type'); // نوعية المادة
             $table->string('publishing_place')->nullable(); // مكان النشر
             $table->string('publisher')->nullable(); // الناشر
-            $table->date('publish_date')->nullable(); // تاريخ النشر
+            $table->integer('publish_date')->nullable(); // تاريخ النشر
             $table->integer('parts')->nullable(); // الأجزاء
             $table->integer('ratio_count')->nullable(); // عدد النسبة
             $table->boolean('is_available')->default(true); // Borrow status

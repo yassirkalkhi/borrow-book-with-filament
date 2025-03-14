@@ -51,8 +51,9 @@ class BookResource extends Resource
                    ->label('الناشر')
                    ->nullable(),
                
-               DatePicker::make('publish_date')
+               TextInput::make('publish_date')
                    ->label('تاريخ النشر')
+                   ->numeric()
                    ->nullable(),
                
                TextInput::make('parts')
@@ -81,7 +82,7 @@ class BookResource extends Resource
             TextColumn::make('material_type')->label('نوعية المادة')->searchable(),
             TextColumn::make('publishing_place')->label('مكان النشر')->searchable(),
             TextColumn::make('publisher')->label('الناشر')->searchable(),
-            TextColumn::make('publish_date')->label('تاريخ النشر')->date()->searchable(),
+            TextColumn::make('publish_date')->label('تاريخ النشر')->searchable(),
             TextColumn::make('parts')->label('الأجزاء')->searchable(),
             TextColumn::make('ratio_count')->label('عدد النسخ')->searchable(),
             IconColumn::make('is_available')

@@ -44,15 +44,21 @@ class BorrowResource extends Resource
                     ->searchable()
                     ->required(),
 
-                // 👇 Borrow Dates
                 DatePicker::make('borrow_date')
                     ->label('تاريخ التسليم')
                     ->default(now())
-                    ->required(),
+                    ->required()
+                    ,
 
                 DatePicker::make('return_date')
                     ->label('تاريخ الإرجاع')
-                    ->nullable(),
+                    ->nullable()
+                    ->after('borrow_date')
+                    ->validationMessages([
+                        'required' => 'حقل تاريخ التسليم مطلوب.',
+                        'date' => 'يجب أن يكون تاريخ التسليم تاريخًا صالحًا.',
+                        'after' => 'يجب أن يكون تاريخ الإرجاع  بعد تاريخ التسليم.',
+                    ])
             ]);
     }
 
