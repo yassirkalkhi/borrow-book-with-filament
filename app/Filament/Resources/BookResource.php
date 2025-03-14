@@ -75,8 +75,8 @@ class BookResource extends Resource
 
     public static function table(Table $table): Table
 {
-    return $table
-        ->columns([
+        return $table
+          ->columns([
             TextColumn::make('author')->label('المؤلف')->searchable(),
             TextColumn::make('title')->label('عنوان المرجع')->searchable(),
             TextColumn::make('material_type')->label('نوعية المادة')->searchable(),
@@ -104,20 +104,27 @@ class BookResource extends Resource
 }
     public static function getNavigationLabel(): string
 {
-              return 'المراجع'; 
+        return 'المراجع'; 
 }
     public static function getPluralModelLabel(): string
 {
-    return 'المراجع'; 
+        return 'المراجع'; 
 }
-public static function getNavigationGroup(): ?string
+    public static function getModelLabel(): string
 {
-    return 'المراجع العربية بخزانة المحكمة الابتدائية '; 
+        return 'كتاب'; // Arabic translation for "Book"
 }
-public static function getNavigationIcon(): string
+    public static function getNavigationGroup(): ?string
+{ 
+        return 'المراجع العربية بخزانة المحكمة الابتدائية '; 
+}
+    public static function getNavigationIcon(): string
 {
-    return 'heroicon-o-book-open';
+        return 'heroicon-o-book-open';
 }
+
+
+
     public static function getRelations(): array
     {
         return [

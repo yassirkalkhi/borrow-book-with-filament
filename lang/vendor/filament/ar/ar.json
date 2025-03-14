@@ -1,8 +1,8 @@
 {
-    "filament::components/breadcrumbs.aria_label": "مسار التنقل",
-    "filament::components/modal.actions.close_button.aria_label": "إغلاق",
-    "filament::pages/auth/login.form.email.label": "البريد الإلكتروني",
-    "filament::resources/pages/create-record.title": "إنشاء :label",
-    "filament::tables/table.actions.delete.action.label": "حذف",
-    "filament::tables/table.actions.edit.action.label": "تعديل"
-  }
+  "filament::components/breadcrumbs.aria_label": "مسار التنقل",
+  "filament::components/modal.actions.close_button.aria_label": "إغلاق",
+  "filament::pages/auth/login.form.email.label": "البريد الإلكتروني",
+  "filament::resources/pages/create-record.title": "إضافة",
+  "filament::tables/table.actions.delete.action.label": "حذف",
+  "filament::tables/table.actions.edit.action.label": "تعديل"
+}

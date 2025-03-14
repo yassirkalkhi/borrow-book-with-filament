@@ -93,20 +93,24 @@ class BorrowResource extends Resource
     }
     public static function getNavigationLabel(): string
     {
-                  return ' جميع التسليمات'; 
+        return ' جميع التسليمات'; 
     }
     public static function getPluralModelLabel(): string
 {
-                 return 'التسليمات'; 
+        return 'التسليمات'; 
+}
+    public static function getModelLabel(): string
+{
+        return 'تسليم'; // Arabic translation for "Book"
 }
     public static function getNavigationGroup(): ?string
 {
-                 return 'المراجع العربية بخزانة المحكمة الابتدائية '; 
+        return 'المراجع العربية بخزانة المحكمة الابتدائية '; 
 }
 
     public static function getRelations(): array
     {
-                return [
+        return [
                    //
              ];
     }

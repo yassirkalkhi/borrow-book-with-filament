@@ -64,11 +64,15 @@ class UserResource extends Resource
     }
     public static function getPluralModelLabel(): string
 {
-              return 'المستخدمين'; 
+        return 'المستخدمين'; 
 }
-     public static function getNavigationIcon(): string
+    public static function getModelLabel(): string
 {
-              return 'heroicon-o-user';
+        return 'مستخدم'; // Arabic translation for "Book"
+}
+    public static function getNavigationIcon(): string
+{
+        return 'heroicon-o-user';
 }
     public static function getRelations(): array
     {
