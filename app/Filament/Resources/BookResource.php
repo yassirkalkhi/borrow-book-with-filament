@@ -114,6 +114,10 @@ public static function getNavigationGroup(): ?string
 {
     return 'المراجع العربية بخزانة المحكمة الابتدائية '; 
 }
+public static function getNavigationIcon(): string
+{
+    return 'heroicon-o-book-open';
+}
     public static function getRelations(): array
     {
         return [

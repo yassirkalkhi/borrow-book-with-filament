@@ -101,8 +101,9 @@ class BorrowResource extends Resource
 }
     public static function getNavigationGroup(): ?string
 {
-    return 'المراجع العربية بخزانة المحكمة الابتدائية '; 
+                 return 'المراجع العربية بخزانة المحكمة الابتدائية '; 
 }
+
     public static function getRelations(): array
     {
                 return [

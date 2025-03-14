@@ -66,6 +66,10 @@ class UserResource extends Resource
 {
               return 'المستخدمين'; 
 }
+     public static function getNavigationIcon(): string
+{
+              return 'heroicon-o-user';
+}
     public static function getRelations(): array
     {
         return [

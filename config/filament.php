@@ -1,7 +1,11 @@
 <?php
 return [
     'language' => 'ar', // Arabic
-   
+    'branding' => [
+        'footer' => [
+            'should_show_logo' => false,
+        ],
+    ],
     /*
     |--------------------------------------------------------------------------
     | Broadcasting
